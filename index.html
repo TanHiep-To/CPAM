@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="Editing natural images using textual descriptions in text-to-image diffusion models remains a significant challenge, particularly in achieving consistent..." name="description">
+<meta content="CPAM" name="keywords">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="CPAM: Context-Preserving Adaptive Manipulation for Zero-Shot Real Image Editing" property="og:title">
+  <meta content="Editing natural images using textual descriptions in text-to-image diffusion models remains a significant challenge, particularly in achieving consistent..." property="og:description">
+  <meta content="website" property="og:type">
+  <meta content="https://tanhiep-to.github.io/CPAM/static/images/fig1.jpg" property="og:image">
+<title>CPAM: Context-Preserving Adaptive Manipulation for Zero-Shot Real Image Editing</title>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+<link href="./static/css/bulma.min.css" rel="stylesheet">
+<link href="./static/css/bulma-carousel.min.css" rel="stylesheet">
+<link href="./static/css/bulma-slider.min.css" rel="stylesheet">
+<link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+<link href="./static/css/index.css" rel="stylesheet">
+<link href="./static/images/favicon.svg" rel="icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+<script src="./static/js/bulma-carousel.min.js"></script>
+<script src="./static/js/bulma-slider.min.js"></script>
+<script src="./static/js/index.js"></script>
+</head>
+<body>
+<nav aria-label="main navigation" class="navbar" role="navigation">
+<div class="navbar-brand">
+<a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div class="navbar-menu">
+<div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+<a aria-label="Home" class="navbar-item" href="https://tanhiep-to.github.io/CPAM/">
+<span class="icon">
+<i class="fas fa-home"></i>
+</span>
+</a>
+
+</div>
+</div>
+</nav>
+<section class="hero">
+<div class="hero-body">
+<div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column has-text-centered">
+<h1 class="title is-1 publication-title">CPAM: Context-Preserving Adaptive Manipulation for Zero-Shot Real Image&nbsp;Editing</h1>
+<div class="is-size-5 publication-authors">
+<span class="author-block">Dinh-Khoi&nbsp;Vo,</span>
+<span class="author-block">Thanh-Toan&nbsp;Do,</span>
+<span class="author-block">Tam&nbsp;V.&nbsp;Nguyen,</span>
+<span class="author-block">Minh-Triet&nbsp;Tran,</span>
+<span class="author-block">Trung-Nghia&nbsp;Le</span>
+</div>
+<div class="is-size-5 publication-authors">
+</div>
+<div class="column has-text-centered">
+<div class="publication-links">
+<span class="link-block">
+<a aria-disabled="true" class="external-link button is-normal is-rounded is-dark" disabled title="Coming soon">
+<span class="icon">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span>Paper&nbsp;(coming&nbsp;soon)</span>
+</a>
+</span>
+<span class="link-block">
+<a aria-disabled="true" class="external-link button is-normal is-rounded is-dark" disabled title="Coming soon">
+<span class="icon">
+<i class="fab fa-github"></i>
+</span>
+<span>Code&nbsp;(coming&nbsp;soon)</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="hero teaser">
+<div class="container is-max-desktop">
+<div class="hero-body">
+
+<img alt="Six pairs of a real image and its edited result, each with the text prompt used." class="interpolation-image" height="967" loading="lazy" src="./static/images/fig1.jpg" width="2135">
+      <h2 class="subtitle has-text-centered">CPAM is a zero-shot framework for text-guided editing of real images, evaluated on the IMBA benchmark&nbsp;of&nbsp;104&nbsp;editing&nbsp;samples.</h2>
+</div>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Abstract</h2>
+<div class="content has-text-justified"><p>Editing natural images using textual descriptions in text-to-image diffusion models remains a significant challenge, particularly in achieving consistent generation and handling complex, non-rigid objects. Existing methods often struggle to preserve textures and identity, require extensive fine-tuning, and exhibit limitations in editing specific spatial regions or objects while retaining background details. This paper proposes Context-Preserving Adaptive Manipulation (CPAM), a novel zero-shot framework for complicated, non-rigid real image editing. Specifically, we propose a preservation adaptation module that adjusts self-attention mechanisms to preserve and independently control the object and&nbsp;background&nbsp;effectively.</p><p>This ensures that the objects' shapes, textures, and identities are maintained while keeping the background undistorted during the editing process using the mask guidance technique. Additionally, we develop a localized extraction module to mitigate the interference with the non-desired modified regions during conditioning in cross-attention mechanisms. We also introduce various mask-guidance strategies to facilitate diverse image manipulation tasks in a simple manner. CPAM can be seamlessly integrated with multiple diffusion backbones, including SD1.5, SD2.1, and SDXL, demonstrating strong generalization across different&nbsp;model&nbsp;architectures.</p><p>Extensive experiments on our newly constructed Image Manipulation BenchmArk (IMBA), a robust benchmark dataset specifically designed for real image editing, demonstrate that our proposed method is the preferred choice among human raters, outperforming existing state-of-the-art editing techniques. The source code and data will be publicly released at the project page: https://vdkhoi20.github.io/CPAM.</p></div>
+</div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Method</h2>
+<div class="content has-text-justified"><p>CPAM edits a real image using a source object mask and a target text prompt, without fine-tuning Stable Diffusion. The mask can be derived in various ways, such as manual drawing, click-based extraction, or&nbsp;text&nbsp;prompts&nbsp;using&nbsp;SAM.</p><p>A preservation adaptation module adjusts self-attention so that the original object and background are retained during editing. A localized extraction module prevents the target prompt from changing regions that should not be modified, and mask-guidance strategies cover diverse&nbsp;image&nbsp;manipulation&nbsp;tasks.</p></div>
+<div class="content has-text-centered"><img alt="Diagram of the CPAM pipeline and of its preservation adaptation and localized extraction modules." class="interpolation-image" height="815" loading="lazy" src="./static/images/fig3.png" width="1646"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;3.</strong> Architecture of our proposed Context-Preserving Adaptive Manipulation (CPAM) for zero-shot real image editing. Given a source image Is and a target text prompt, the pipeline first obtains the source mask Ms through the MaskInputModule, which can derive masks from manual annotations, click-based interaction, or text prompts using SAM. The source image is then inverted into latent noise using DDIM inversion with null-text guidance [46]. During the editing process, the source mask Ms defines the original object region and separates foreground from background, while the target mask Mt controls the desired edited structure and may evolve during diffusion, resulting the image It. The preservation adaptation (PA) module operates on self-attention to preserve background and object attributes outside the editing region, while the localized extraction (LE) module modulates cross-attention to restrict the influence of the target prompt to the specified&nbsp;editing&nbsp;area.</h2></div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Comparison with the State of&nbsp;the&nbsp;Art</h2>
+
+<h2 class="subtitle has-text-centered"><strong>Table&nbsp;II.</strong> COMPARISON WITH STATE-OF-THE-ART METHODS USING CLIPSCORE TO MEASURE TEXT-IMAGE ALIGNMENT, LPIPS, DREAMSIM (DS), AND RMSE TO EVALUATE BACKGROUND PRESERVATION. BOLD, UNDERLINE, AND italic INDICATE THE BEST, SECOND BEST, AND THIRD BEST SCORES, RESPECTIVELY. IMAGIC [37] IS THE FINE-TUNING METHOD (FT). Best in bold, second&nbsp;best&nbsp;underlined.</h2><div class="table-container"><table class="table is-fullwidth is-hoverable"><thead><tr><th scope="col">Method</th><th scope="col">CLIP &uarr;</th><th scope="col">LPIPS &darr;</th><th scope="col">DS &darr;</th><th scope="col">RMSE &darr;</th></tr></thead><tbody><tr><th scope="row">SDEdit&nbsp;[30]</th><td>28.19</td><td>0.386</td><td>0.239</td><td>57.16</td></tr><tr><th scope="row">MasaCtrl&nbsp;[32]</th><td>28.82</td><td>0.246</td><td>0.121</td><td>32.51</td></tr><tr><th scope="row">PnP&nbsp;[11]</th><td>29.03</td><td>0.238</td><td>0.075</td><td>24.36</td></tr><tr><th scope="row">FPE&nbsp;[33]</th><td>29.02</td><td>0.201</td><td><u>0.056</u></td><td>22.06</td></tr><tr><th scope="row">DiffEdit&nbsp;[36]</th><td>28.58</td><td>0.182</td><td>0.080</td><td>35.81</td></tr><tr><th scope="row">Pix2Pix-Zero&nbsp;[12]</th><td>27.01</td><td>0.229</td><td>0.117</td><td>31.30</td></tr><tr><th scope="row">LEDITS++&nbsp;[31]</th><td>28.74</td><td>0.210</td><td>0.104</td><td>43.30</td></tr><tr><th scope="row">Imagic&nbsp;[37]&nbsp;(FT)</th><td><strong>30.34</strong></td><td>0.462</td><td>0.286</td><td>81.55</td></tr><tr><th scope="row">CPAM-SD1.5&nbsp;(Ours)</th><td>29.26</td><td>0.180</td><td>0.072</td><td>23.42</td></tr><tr><th scope="row">CPAM-SD2.1&nbsp;(Ours)</th><td>29.08</td><td><u>0.125</u></td><td><strong>0.044</strong></td><td><u>19.13</u></td></tr><tr><th scope="row">CPAM-SDXL&nbsp;(Ours)</th><td><u>29.77</u></td><td><strong>0.118</strong></td><td><strong>0.044</strong></td><td><strong>18.90</strong></td></tr></tbody></table></div><div class="content has-text-justified"><p>CPAM-SDXL obtains the best background preservation, with LPIPS of 0.118&nbsp;and RMSE of 18.90,&nbsp;while keeping a competitive CLIPScore of 29.77.&nbsp;CPAM-SD2.1 reaches the same best DreamSim score (0.044) and the second-best RMSE. Imagic, the fine-tuning method, has the highest CLIPScore (30.34) but the weakest&nbsp;background&nbsp;preservation.</p></div><div class="content has-text-justified"><p>Qualitative comparison with state-of-the-art methods across multiple real image editing tasks, with CPAM shown on different&nbsp;diffusion&nbsp;backbones.</p></div><div class="content has-text-centered"><img alt="Grid of editing results: rows are editing tasks, columns are the compared methods and CPAM on three backbones." class="interpolation-image" height="910" loading="lazy" src="./static/images/fig7.jpg" width="1707"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;7.</strong> Qualitative comparison of our proposed CPAM with state-of-the-art methods across multiple real image editing tasks. Results are shown on different diffusion backbones, including SD1.5, SD2.1, and SDXL. CPAM consistently produces more coherent edits while preserving background structure and scene layout. Please zoom in for&nbsp;clearer&nbsp;details.</h2></div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+<h2 class="title">BibTeX</h2>
+<pre><code>@misc{vocpam,
+  author = {Vo, Dinh-Khoi and Do, Thanh-Toan and Nguyen, Tam V. and Tran, Minh-Triet and Le, Trung-Nghia},
+  title  = {CPAM: Context-Preserving Adaptive Manipulation for Zero-Shot Real Image Editing},
+}</code></pre>
+</div>
+</section>
+
+
+
+
+
+<footer class="footer">
+<div class="container">
+<div class="content has-text-centered">
+
+
+</div>
+<div class="columns is-centered">
+<div class="column is-8">
+<div class="content">
+<p>
+            This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+<p>
+            This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
